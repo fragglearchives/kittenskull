@@ -561,8 +561,16 @@
       transition: transform 0.25s ease;
     }
 
+    .moon.mirror {
+      transform: scaleX(-1);
+    }
+
     .moon:hover {
       transform: translateY(-3px);
+    }
+
+    .moon.mirror:hover {
+      transform: scaleX(-1) translateY(-3px);
     }
 
     .footer-name {
@@ -693,13 +701,28 @@
 
       <a href="#pieces" class="nav-link">
 
-        <svg class="nav-icon" viewBox="0 0 24 24">
+        <svg
+          class="nav-icon"
+          viewBox="0 0 24 24"
+        >
 
-          <path d="M8 21 4 12l5-9 3 5 3-5 5 9-4 9Z"></path>
+          <circle
+            cx="12"
+            cy="7"
+            r="3">
+          </circle>
 
-          <path d="m4 12 8 3 8-3"></path>
+          <path d="M12 10v9"></path>
 
-          <path d="M12 8v7"></path>
+          <path d="M8 14c1.5-1.5 2.8-2 4-2s2.5.5 4 2"></path>
+
+          <path d="M6 19h12"></path>
+
+          <path d="M5 4 3 2"></path>
+
+          <path d="m19 4 2-2"></path>
+
+          <path d="M12 2V0"></path>
 
         </svg>
 
@@ -1148,11 +1171,11 @@
 
       <span class="moon">●</span>
 
-      <span class="moon">◕</span>
+      <span class="moon mirror">◕</span>
 
-      <span class="moon">◑</span>
+      <span class="moon mirror">◑</span>
 
-      <span class="moon">◔</span>
+      <span class="moon mirror">◔</span>
 
       <span class="moon">☽</span>
 
